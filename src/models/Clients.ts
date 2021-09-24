@@ -1,20 +1,29 @@
 import { uuid } from 'uuidv4';
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+
 
 export default class Clients {
-  @PrimaryGeneratedColumn('')
+  
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Column()
   code: number;
 
+  @Column()
   name: string;
 
+  @Column('float')
   budget: number;
 
-  cpf: number;
+  @Column()
+  cpf: string;
 
+  @Column()
   email: string;
 
-  phone: number;
+  @Column()
+  phone: string;
 
   constructor({
     budget,

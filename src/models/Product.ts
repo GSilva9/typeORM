@@ -4,6 +4,7 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
 export default class Product {
+  
   @PrimaryGeneratedColumn('uuid')
   id: string;
 

@@ -1,6 +1,7 @@
 import { uuid } from 'uuidv4';
 
 export default class Clients {
+  @PrimaryGeneratedColumn('')
   id: string;
 
   code: number;
